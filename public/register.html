@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="../src/output.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <main class="h-[100vh] w-[100vw]  flex flex-col overflow-x-hidden ">
+        <nav class="h-20 w-full p-4  bg-black text-white flex justify-around items-center">
+            <a href="index.html">
+                <h2 class="text-white text-3xl">STOEX</h2>
+            </a>
+            <ul id="menu"
+                class=" flex justify-center items-center gap-10 text-2xl sm:justify-end sm:w-full sm:text-base sm: md:justify-end md:w-full md:text-base lg:w-auto lg:gap-12 lg:text-lg">
+                <li ><a class="p-4 rounded-xl hover:bg-white hover:text-black " href="stocks.html">Stocks</a></li>
+                <li ><a class="p-4 rounded-xl hover:bg-white hover:text-black " href="buy&sell.html">Buy & Sell</a></li>
+                <li ><a class="p-4 rounded-xl hover:bg-white hover:text-black " href="trends.html">Market Trends</a></li>
+                <li ><a class="p-4 rounded-xl hover:bg-white hover:text-black " href="login.html">Login</a></li>
+                <li ><a class="p-4 rounded-xl bg-white text-black " href="#">Register</a></li>
+            </ul>
+            <button id="hamburger" class="block sm:hidden max-sm:block">
+                <i class='bx bx-menu text-3xl'></i>
+            </button>
+        </nav>
+        <h1 class="text-5xl text-center w-full mt-20">Register</h1>
+        <section id="login">
+            <form action="#" class="h-full w-full p-20 flex flex-col gap-5 justify-center items-center">
+                <div class="w-[50%]">
+                    <input type="email"
+                        class="border-2 border-black w-full h-10 flex justify-start p-5 rounded-xl items-center"
+                        placeholder="Email ID">
+                </div>
+                <div class="w-[50%]">
+                    <input type="text"
+                        class="border-2 border-black w-full h-10 flex justify-start p-5 rounded-xl items-center"
+                        placeholder="Username">
+                </div>
+                <div class="w-[50%]">
+                    <input type="text"
+                        class="border-2 border-black w-full h-10 flex justify-start p-5 rounded-xl items-center"
+                        placeholder="password">
+                </div>
+                <div class="w-[50%]">
+                    <input type="text"
+                        class="border-2 border-black w-full h-10 flex justify-start p-5 rounded-xl items-center"
+                        placeholder="confirm password">
+                </div>
+                <div class="w-[50%] flex flex-col gap-7">
+                    <button href="register.html"
+                        class="bg-black text-white w-full h-11 rounded-3xl flex justify-center items-center hover:bg-white hover:text-black hover:border-2 hover:border-black">Register</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

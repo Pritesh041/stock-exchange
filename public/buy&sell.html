@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy & Sell</title>
+    <link href="../src/output.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <main class="h-[100vh] w-[100vw]  flex flex-col overflow-x-hidden ">
+        <nav class="h-20 w-full p-4  bg-black text-white flex justify-around items-center">
+            <a href="index.html">
+                <h2 class="text-white text-3xl">STOEX</h2>
+            </a>
+            <ul id="menu"
+                class=" flex justify-center items-center gap-10 text-2xl sm:justify-end sm:w-full sm:text-base sm: md:justify-end md:w-full md:text-base lg:w-auto lg:gap-12 lg:text-lg">
+                <li><a class="p-4 rounded-xl hover:bg-white hover:text-black" href="stocks.html">Stocks</a></li>
+                <li><a class="p-4 rounded-xl bg-white text-black" href="#">Buy & Sell</a></li>
+                <li><a class="p-4 rounded-xl hover:bg-white hover:text-black" href="trends.html">Market Trends</a></li>
+                <li><a class="p-4 rounded-xl hover:bg-white hover:text-black" href="login.html">Login</a></li>
+                <li><a class="p-4 rounded-xl hover:bg-white hover:text-black " href="register.html">Register</a></li>
+            </ul>
+            <button id="hamburger" class="block sm:hidden max-sm:block">
+                <i class='bx bx-menu text-3xl'></i>
+            </button>
+        </nav>
+        <h1 class="text-5xl text-center w-full mt-7">Buy & Sell</h1>
+        <section id="buy&sell" class="w-full h-full p-20">
+            <div id="container" class="w-full h-full flex flex-col gap-5">
+                <div
+                    class="bg-[#ffffff] w-full flex justify-between p-10 items-center border-2 border-black rounded-3xl">
+                    <div id="icon"
+                        class="text-3xl flex justify-center w-11 h-11 items-center bg-black text-white border-black rounded-full">
+                        <i class='bx bxl-meta'></i>
+                    </div>
+                    <a href="meta.html" id="name" class="text-2xl flex justify-center items-center">Meta</a>
+                    <div id="price" class="font-bold text-3xl">$59.78</div>
+                    <div id="change" class="text-green-500 text-2xl font-bold">+1.80%</div>
+                    <div class="flex justify-center items-center gap-10">
+                        <button id="meta-sell" class="w-20 h-10 bg-red-500 text-white rounded-lg">Sell</button>
+                        <button id="meta-buy" class="w-20 h-10 bg-green-500 text-white rounded-lg">Buy</button>
+                    </div>
+                </div>
+                <div id="sell1" class="hidden w-3/12 flex-col justify-center items-center gap-5">
+                    <div class="flex justify-between w-[50%]">
+                        <div>Quantity:</div>
+                        <i id="cross" class='bx bx-x text-3xl cursor-pointer'></i>
+                    </div>
+                    <div class="flex justify-between w-[50%]">
+                        <input class="border-2 border-black h-5 rounded-md appearance-none w-52 p-2" type="number">
+                        <button class="w-20 h-10 bg-red-500 text-white rounded-lg">Sell</button>
+                    </div>
+                </div>
+                <div id="buy1" class="w-3/12 hidden flex-col justify-center items-center gap-5">
+                    <div class="flex justify-between w-[50%]">
+                        <div>Quantity:</div>
+                        <i class='bx bx-x text-3xl cursor-pointer'></i>
+                    </div>
+                    <div class="flex justify-between w-[50%]">
+                        <input class="border-2 border-black h-5 rounded-md appearance-none w-52 p-2" type="number">
+                        <button class="w-20 h-10 bg-green-500 text-white rounded-lg">Buy</button>
+                    </div>
+                </div>
+                <div
+                    class="bg-[#ffffff] w-full flex justify-between p-10 items-center border-2 border-black rounded-3xl">
+                    <div id="icon"
+                        class="text-3xl flex justify-center w-11 h-11 items-center bg-black text-white border-black rounded-full">
+                        <i class='bx bxl-amazon' style='color:#ffffff'></i>
+                    </div>
+                    <a href="amazon.html" id="name" class="text-2xl flex justify-center items-center">Amazon</a>
+                    <div id="price" class="font-bold text-3xl">$80.88</div>
+                    <div id="change" class="text-green-500 text-2xl font-bold">+1%</div>
+                    <div class="flex justify-center items-center gap-10">
+                        <button id="ama-sell" class="w-20 h-10 bg-red-500 text-white rounded-lg">Sell</button>
+                        <button id="ama-buy" class="w-20 h-10 bg-green-500 text-white rounded-lg">Buy</button>
+                    </div>
+                </div>
+                <div id="sell2" class="hidden w-3/12 flex-col justify-center items-center gap-5">
+                    <div class="flex justify-between w-[50%]">
+                        <div>Quantity:</div>
+                        <i id="cross" class='bx bx-x text-3xl cursor-pointer'></i>
+                    </div>
+                    <div class="flex justify-between w-[50%]">
+                        <input class="border-2 border-black h-5 rounded-md appearance-none w-52 p-2" type="number">
+                        <button class="w-20 h-10 bg-red-500 text-white rounded-lg">Sell</button>
+                    </div>
+                </div>
+                <div id="buy2" class="w-3/12 hidden flex-col justify-center items-center gap-5">
+                    <div class="flex justify-between w-[50%]">
+                        <div>Quantity:</div>
+                        <i id="cross" class='bx bx-x text-3xl cursor-pointer'></i>
+                    </div>
+                    <div class="flex justify-between w-[50%]">
+                        <input class="border-2 border-black h-5 rounded-md appearance-none w-52 p-2" type="number">
+                        <button class="w-20 h-10 bg-green-500 text-white rounded-lg">Buy</button>
+                    </div>
+                </div>
+                <div
+                    class="bg-[#ffffff] w-full flex justify-between p-10 items-center border-2 border-black rounded-3xl">
+                    <div id="icon"
+                        class="text-3xl flex justify-center w-11 h-11 items-center bg-black text-white border-black rounded-full">
+                        <i class='bx bxl-apple' style='color:#ffffff'></i>
+                    </div>
+                    <a href="apple.html" id="name" class="text-2xl flex justify-center items-center">Apple</a>
+                    <div id="price" class="font-bold text-3xl">$49</div>
+                    <div id="change" class="text-red-500 text-2xl font-bold">-2.08%</div>
+                    <div class="flex justify-center items-center gap-10">
+                        <button id="app-sell" class="w-20 h-10 bg-red-500 text-white rounded-lg">Sell</button>
+                        <button id="app-buy" class="w-20 h-10 bg-green-500 text-white rounded-lg">Buy</button>
+                    </div>
+                </div>
+                <div id="sell3" class="hidden w-3/12 flex-col justify-center items-center gap-5">
+                    <div class="flex justify-between w-[50%]">
+                        <div>Quantity:</div>
+                        <i id="cross" class='bx bx-x text-3xl cursor-pointer'></i>
+                    </div>
+                    <div class="flex justify-between w-[50%]">
+                        <input class="border-2 border-black h-5 rounded-md appearance-none w-52 p-2" type="number">
+                        <button class="w-20 h-10 bg-red-500 text-white rounded-lg">Sell</button>
+                    </div>
+                </div>
+                <div id="buy3" class="w-3/12 hidden flex-col justify-center items-center gap-5">
+                    <div class="flex justify-between w-[50%]">
+                        <div>Quantity:</div>
+                        <i id="cross" class='bx bx-x text-3xl cursor-pointer'></i>
+                    </div>
+                    <div class="flex justify-between w-[50%]">
+                        <input class="border-2 border-black h-5 rounded-md appearance-none w-52 p-2" type="number">
+                        <button class="w-20 h-10 bg-green-500 text-white rounded-lg">Buy</button>
+                    </div>
+                </div>
+                <div
+                    class="bg-[#ffffff] w-full flex justify-between p-10 items-center border-2 border-black rounded-3xl">
+                    <div id="icon"
+                        class="text-3xl flex justify-center w-11 h-11 items-center bg-black text-white border-black rounded-full">
+                        <i class='bx bxl-linkedin'></i>
+                    </div>
+                    <a href="linkedin.html" id="name" class="text-2xl flex justify-center items-center">Linkedin</a>
+                    <div id="price" class="font-bold text-3xl">$272.56</div>
+                    <div id="change" class="text-red-500 text-2xl font-bold">-5%</div>
+                    <div class="flex justify-center items-center gap-10">
+                        <button id="link-sell" class="w-20 h-10 bg-red-500 text-white rounded-lg">Sell</button>
+                        <button id="link-buy" class="w-20 h-10 bg-green-500 text-white rounded-lg">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div id="sell4" class="hidden w-3/12 flex-col justify-center items-center gap-5">
+                <div class="flex justify-between w-[50%]">
+                    <div>Quantity:</div>
+                    <i id="cross" class='bx bx-x text-3xl cursor-pointer'></i>
+                </div>
+                <div class="flex justify-between w-[50%]">
+                    <input class="border-2 border-black h-5 rounded-md appearance-none w-52 p-2" type="number">
+                    <button class="w-20 h-10 bg-red-500 text-white rounded-lg">Sell</button>
+                </div>
+            </div>
+            <div id="buy4" class="w-3/12 hidden flex-col justify-center items-center gap-5">
+                <div class="flex justify-between w-[50%]">
+                    <div>Quantity:</div>
+                    <i id="cross" class='bx bx-x text-3xl cursor-pointer'></i>
+                </div>
+                <div class="flex justify-between w-[50%]">
+                    <input class="border-2 border-black h-5 rounded-md appearance-none w-52 p-2" type="number">
+                    <button class="w-20 h-10 bg-green-500 text-white rounded-lg">Buy</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+
+        var cross = document.getElementById('cross');
+        cross.addEventListener('click', function (e) {
+            sell1.classList.remove('flex');
+            sell1.classList.add('hidden');
+        });
+
+        var metasell = document.getElementById("meta-sell");
+        var metabuy = document.getElementById("meta-buy");
+        var sell1 = document.getElementById("sell1");
+        var buy1 = document.getElementById("buy1");
+
+        metasell.addEventListener("click", function (e) {
+            console.log("click");
+            sell1.classList.remove("hidden");
+            sell1.classList.add("flex");
+        });
+        metabuy.addEventListener("click", function (e) {
+            console.log("click");
+            buy1.classList.remove("hidden");
+            buy1.classList.add("flex");
+        });
+
+
+        var amasell = document.getElementById("ama-sell");
+        var amaabuy = document.getElementById("ama-buy");
+        var sell2 = document.getElementById("sell2");
+        var buy2 = document.getElementById("buy2");
+
+        amasell.addEventListener("click", function (e) {
+            console.log("click");
+            sell2.classList.remove("hidden");
+            sell2.classList.add("flex");
+        });
+        amabuy.addEventListener("click", function (e) {
+            console.log("click");
+            buy2.classList.remove("hidden");
+            buy2.classList.add("flex");
+        });
+        var appsell = document.getElementById("app-sell");
+        var appbuy = document.getElementById("app-buy");
+        var sell3 = document.getElementById("sell3");
+        var buy3 = document.getElementById("buy3");
+
+        appsell.addEventListener("click", function (e) {
+            console.log("click");
+            sell3.classList.remove("hidden");
+            sell3.classList.add("flex");
+        });
+        appbuy.addEventListener("click", function (e) {
+            console.log("click");
+            buy3.classList.remove("hidden");
+            buy3.classList.add("flex");
+        });
+
+        var linksell = document.getElementById("link-sell");
+        var linkbuy = document.getElementById("link-buy");
+        var sell4 = document.getElementById("sell4");
+        var buy4 = document.getElementById("buy4");
+
+        linksell.addEventListener("click", function (e) {
+            console.log("click");
+            sell4.classList.remove("hidden");
+            sell4.classList.add("flex");
+        });
+        linkbuy.addEventListener("click", function (e) {
+            console.log("click");
+            buy4.classList.remove("hidden");
+            buy4.classList.add("flex");
+        });
+    </script>
+</body>
+
+</html>

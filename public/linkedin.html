@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LINKEDIN</title>
+  <link href="../src/output.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <main class="h-[100vh] w-[100vw] flex flex-col items-center overflow-x-hidden ">
+    <nav class="h-20 w-full p-4  bg-black text-white flex justify-around items-center">
+      <a href="index.html">
+        <h2 class="text-white text-3xl">STOEX</h2>
+      </a>
+      <ul id="menu"
+        class=" flex justify-center items-center gap-10 text-2xl sm:justify-end sm:w-full sm:text-base sm: md:justify-end md:w-full md:text-base lg:w-auto lg:gap-12 lg:text-lg">
+        <li><a class="p-4 rounded-xl bg-white text-black" href="stocks.html">Stocks</a></li>
+        <li><a class="p-4 rounded-xl hover:bg-white hover:text-black" href="trends.html">Market Trends</a></li>
+        <li><a class="p-4 rounded-xl hover:bg-white hover:text-black" href="buy&sell.html">Buy & Sell</a></li>
+        <li><a class="p-4 rounded-xl hover:bg-white hover:text-black" href="login.html">Login</a></li>
+        <li><a class="p-4 rounded-xl hover:bg-white hover:text-black " href="register.html">Register</a></li>
+      </ul>
+      <button id="hamburger" class="block sm:hidden max-sm:block">
+        <i class='bx bx-menu text-3xl'></i>
+      </button>
+    </nav>
+    <div class="text-4xl text-center mt-5 mb-5">LINKEDIN</div>
+    <div class="mx-auto w-[50%] h-full">
+      <div id="chart_div" class="w-full h-full"></div>
+    </div>
+    <div class="flex justify-center items-center gap-10 mb-10">
+      <div>Quantity:</div>
+      <input class="border-2 border-black h-5 rounded-md appearance-none w-52 p-2" type="number">
+      <button class="w-20 h-10 bg-red-500 text-white rounded-lg">Sell</button>
+      <button class="w-20 h-10 bg-green-500 text-white rounded-lg">Buy</button>
+  </div>
+  </main>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', { packages: ['corechart', 'line'] });
+    google.charts.setOnLoadCallback(drawBasic);
+
+    function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'X');
+      data.addColumn('number', 'Price');
+      data.addRows([
+        [2010, 165.71],
+        [2011, 223.89],
+        [2012, 195.81],
+        [2013, 195.24],
+        [2014, 101.16],
+        [2015, 225.56],
+        [2016, 229.56],
+        [2017, 207.478],
+        [2018, 112.89],
+        [2019, 64.15],
+        [2020, 56.8],
+        [2021, 229.60],
+        [2022, 25.67],
+        [2023, 272.56],
+      ]);
+
+      var options = {
+        hAxis: {
+          title: 'Year'
+        },
+        vAxis: {
+          title: 'Price'
+        }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../src/output.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="scroll-auto">
+    <main class="h-[100vh] w-[100vw]  flex flex-col overflow-x-hidden ">
+        <nav class="h-20 w-full p-4  bg-black text-white flex justify-around items-center">
+            <a href="#">
+                <h2 class="text-white text-3xl">STOEX</h2>
+            </a>
+            <ul id="menu"
+                class=" flex justify-center items-center gap-10 text-2xl sm:w-full sm:text-base sm:justify-around md:justify-end md:w-full md:text-base lg:w-auto lg:gap-12 lg:text-lg">
+                <li><a class="p-4 rounded-xl hover:bg-white hover:text-black " href="stocks.html">Stocks</a></li>
+                <li><a class="p-4 rounded-xl hover:bg-white hover:text-black " href="buy&sell.html">Buy & Sell</a></li>
+                <li><a class="p-4 rounded-xl hover:bg-white hover:text-black " href="trends.html">Market Trends</a></li>
+                <li><a class="p-4 rounded-xl hover:bg-white hover:text-black " href="login.html">Login</a></li>
+                <li><a class="p-4 rounded-xl hover:bg-white hover:text-black " href="register.html">Register</a></li>
+            </ul>
+        </nav>
+        <div id="hero" class="h-full flex flex-col md:flex-row md:mb-96 md:  gap-5 mt-24 p-10">
+            <div id="first" class="h-full w-full sm:w-[50%]">
+                <div id="image" class="h-full w-full">
+                    <img class="h-full w-full object-contain"
+                        src="https://5.imimg.com/data5/SELLER/Default/2022/8/DU/RC/HH/9003527/share-market-related-service.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div id="second" class="flex h-full flex-col gap-6 justify-center">
+                <h1 class="text-4xl sm:text-6xl mb-10">Welcome to stock market</h1>
+                <p class="text-xl sm:text-2xl mb-10">Deliver your order around the world without hesitation</p>
+                <div class="flex flex-col gap-7">
+                    <button><a
+                            class="bg-black text-white w-full sm:w-64 h-11 rounded-3xl flex justify-center items-center hover:bg-white hover:text-black hover:border-2 hover:border-black"
+                            href="login.html">Login</a></button>
+                    <button><a
+                            class="bg-black text-white w-full sm:w-64 h-11 rounded-3xl flex justify-center items-center hover:bg-white hover:text-black hover:border-2 hover:border-black"
+                            href="register.html">Register</a></button>
+                </div>  
+            </div>
+            
+        </div>
+        
+    </main>
+</body>
+
+</html>
